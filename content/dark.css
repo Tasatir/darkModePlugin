@@ -1,0 +1,23 @@
+html.dm-dark {
+  filter: invert(1) hue-rotate(180deg);
+  background-color: #fff !important;
+  color-scheme: dark;
+  min-height: 100vh;
+}
+
+html.dm-dark input,
+html.dm-dark textarea,
+html.dm-dark select {
+  color-scheme: light;
+}
+
+html.dm-dark body {
+  background-color: #fff !important;
+}
+
+html.dm-dark img,
+html.dm-dark video,
+html.dm-dark canvas,
+html.dm-dark iframe {
+  filter: invert(1) hue-rotate(180deg);
+}

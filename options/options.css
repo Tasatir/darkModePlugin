@@ -1,0 +1,59 @@
+:root {
+  color-scheme: dark;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #1c1c1e;
+  color: #f2f2f2;
+}
+
+main {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+h1 {
+  margin: 0 0 16px;
+  font-size: 22px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px 8px;
+  border-bottom: 1px solid #3a3a3c;
+  text-align: left;
+  vertical-align: middle;
+}
+
+th {
+  font-size: 13px;
+  color: #c8c8cc;
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+button {
+  border: 1px solid #3a3a3c;
+  border-radius: 8px;
+  background: #2c2c2e;
+  color: inherit;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+button.danger {
+  color: #ffb4ab;
+}

@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Modo oscuro",
+  "version": "1.0.0",
+  "description": "Aplica modo oscuro por dominio y recuerda la elección.",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_title": "Modo oscuro",
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "options_page": "options/options.html",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["lib/sites.js", "content/content.js"],
+      "css": ["content/dark.css"],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ]
+}

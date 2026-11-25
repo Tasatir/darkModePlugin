@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Modo oscuro</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Modo oscuro</h1>
+    </header>
+    <p id="host"></p>
+    <p id="unsupported" hidden>
+      Esta página no se puede modificar.
+    </p>
+    <div id="modes" hidden>
+      <button type="button" data-mode="normal">Normal</button>
+      <button type="button" data-mode="dark">Oscuro</button>
+    </div>
+    <p id="status" role="status"></p>
+    <a id="open-list" href="#">Sitios guardados</a>
+    <script src="../lib/sites.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

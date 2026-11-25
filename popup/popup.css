@@ -1,0 +1,63 @@
+:root {
+  color-scheme: dark;
+  font-family: system-ui, sans-serif;
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  width: 280px;
+  padding: 16px;
+  background: #1c1c1e;
+  color: #f2f2f2;
+}
+
+h1 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 650;
+}
+
+#host,
+#unsupported,
+#status {
+  margin: 10px 0 0;
+  line-height: 1.4;
+}
+
+#host {
+  color: #c8c8cc;
+  word-break: break-all;
+}
+
+#modes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+button {
+  border: 1px solid #3a3a3c;
+  border-radius: 8px;
+  background: #2c2c2e;
+  color: inherit;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+button[aria-pressed="true"] {
+  background: #f2f2f2;
+  color: #1c1c1e;
+  border-color: #f2f2f2;
+}
+
+#open-list {
+  display: inline-block;
+  margin-top: 14px;
+  color: #8eb6ff;
+}
+
+#status:empty {
+  display: none;
+}

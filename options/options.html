@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sitios guardados</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Sitios guardados</h1>
+      <p id="empty" hidden>No hay sitios guardados.</p>
+      <table id="list" hidden>
+        <thead>
+          <tr>
+            <th>Dominio</th>
+            <th>Modo</th>
+            <th>Actualizado</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </main>
+    <script src="../lib/sites.js"></script>
+    <script src="options.js"></script>
+  </body>
+</html>
